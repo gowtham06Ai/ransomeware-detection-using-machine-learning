@@ -1,0 +1,202 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>data input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="static/images/pngegg101.png" type="image/gif" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+    <style>
+      html, body {
+      min-height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 12px;
+      color: #666;
+      }
+      h1 {
+      margin: 0 0 20px;
+      font-weight: 400;
+      color: #1c87c9;
+      }
+
+     
+      form {
+        margin-top: 180px;
+      padding: 25px;
+
+      box-shadow: 0 2px 5px #f5f5f5; 
+      background: #f5f5f5; 
+      }
+      
+      input, textarea {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #1c87c9;
+      outline: none;
+      }
+      input::placeholder {
+      color: #666;
+      }
+      button {
+      width: 100%;
+      height:50px;
+      padding: 10px;
+      border: none;
+      background: #1c87c9; 
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      }
+      button:hover {
+      background: #2371a0;
+      }    
+      form label{
+        font-size: 11px;
+        color: rgb(255, 119, 0);
+      }
+    </style> 
+  </head>
+  <body>
+
+       <!-- header -->
+       <header >
+        <!-- header inner -->
+        <div class="header" style="background: #4843a3;">
+           <div class="container-fluid">
+              <div class="row">
+                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                       <div class="center-desk">
+                        <div class="logo">
+                          <!--<a href="index.html" ><img src="images/ransomware.jpg"  alt="" srcset=""></a>  <h1 style="color:yellow;font-weight:600;font-size:30px">RANSOMEWARE</h1> -->
+                         <h1 style="color:rgb(255, 0, 0);font-size: 55px;font-family: 'Abril Fatface', serif;font-weight: 900;">RANSOMWARE</h1>
+                      </div>
+                       </div>
+                    </div> 
+                 </div>
+                 <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                    <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                       </button>
+                       <div class="collapse navbar-collapse" id="navbarsExample04">
+                          <ul class="navbar-nav mr-auto">
+                             <li class="nav-item ">
+                                <a class="nav-link" href="/">Home</a>
+                             </li>
+ 
+                          </ul>
+                       </div>
+                    </nav>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </header>
+     <!-- end header inner -->
+     <!-- end header -->
+
+
+    <div class="row ">
+        <div class="col-md-10 offset-md-1">
+            <form action="/result"  method="post">
+                <h1>Selected Row details:(Row:{{ number }})</h1>
+                <div class="row">
+                    {% for i in range(21) %}
+                    <div class="col-md-3">
+                        <label for="" style="text-transform: uppercase;">{{ columns[i] }}:</label>
+                        <input class="fname" type="text" name="{{ columns[i] }}"  placeholder="" required>
+                    </div>
+                    {% endfor %}
+
+
+
+
+                    <button type="submit" href="/">PREDICT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+          <!--  footer -->
+          <footer>
+            <div class="footer">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <img class="logo1" src="{{ url_for('static', filename='images/pngegg101.png') }}" alt=""/>
+                        <ul class="social_icon">
+                           <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                           <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                           <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                     </div>
+                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <h3>About Us</h3>
+                        <ul class="about_us">
+                           <li>dolor sit amet, consectetur<br> magna aliqua. Ut enim ad <br>minim veniam, <br> quisdotempor incididunt r</li>
+                        </ul>
+                     </div>
+                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <h3>Contact Us</h3>
+                        <ul class="conta">
+                           <li>dolor sit amet,<br> consectetur <br>magna aliqua.<br> quisdotempor <br>incididunt ut e </li>
+                        </ul>
+                     </div>
+                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="bottom_form" >
+                           <h3>Get In Touch</h3>
+                           <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
+                           <button class="sub_btn">send</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="copyright">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <p>© 2023 All Rights Reserved. Design by<a href=""> Me</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!-- end footer -->
+
+
+         <script src="js/jquery.min.js"></script>
+	  <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+      <script src="js/popper.min.js"></script>
+	  <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+	  <script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+	  <script src="{{url_for('static',filename='js/jquery-3.0.0.min.js')}}"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	  <script src="{{url_for('static',filename='js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+      <script src="js/custom.js"></script>
+	  <script src="{{url_for('static',filename='js/custom.js')}}"></script>      
+  </body>
+
+</html>
+

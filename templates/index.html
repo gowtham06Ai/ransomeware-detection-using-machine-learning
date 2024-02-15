@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Ransomeware</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+	  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+      <!-- fevicon -->
+      <link rel="icon" href="static/images/pngegg101.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+	  <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+     <!-- <div class="loader_bg">
+         <div class="loader"><img src="images/getty1.jpg" alt="#" /></div>
+      </div>-->
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                               <!--<a href="index.html" ><img src="images/ransomware.jpg"  alt="" srcset=""></a>  <h1 style="color:yellow;font-weight:600;font-size:30px">RANSOMEWARE</h1> -->
+                              <h1 style="color:rgb(255, 0, 0);font-size: 55px;font-family: 'Abril Fatface', serif;font-weight: 900;">RANSOMEWARE</h1>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarsExample04" >
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="/">Home</a>
+                              </li>
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="#prediction">Prediction</a>
+                              </li>
+
+                           </ul>
+                              
+                           
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main container" style="background-image: url('/static/images/bn5.jpg');
+            background-repeat: no-repeat;
+      min-height: 100px;
+      max-height:600px;
+      background-size: 100% 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      position: relative;" >
+         <div id="banner1" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner" style="margin-top: 200px;">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="text-bg" >
+                                 <span>Computer And Laptop</span>
+                                 <h1>Prevent Faster</h1>
+                                 <p>Ransomware is a type of malware attack in which the attacker locks and encrypts the victim’s data, important files and then demands a payment to unlock and decrypt the data.</p>
+                                 <a href="">YES </a> <a href="">NO </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="text_img">
+                                 <figure style="margin-top: 60px;"><img src="{{ url_for('static', filename='images/pngegg3.png') }}" alt="#"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               </div>
+            </div>
+
+         </div>
+      </section>
+      <!-- end banner -->
+
+      <!-- three_box -->
+
+      <div class="three_box">
+         <h1 style="margin: 20px; font-weight: 800;color: rgb(0, 255, 76);text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Computer viruses make your devices sick, but you can usually help them heal if you act fast</h1>
+
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <i><img src="{{ url_for('static', filename='images/thr.png') }}" alt="#"/></i>
+                     <h3>Computer</h3>
+                     <p></p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <i><img src="{{ url_for('static', filename='images/thr1.png') }}" alt="#"/></i>
+                     <h3>Laptop</h3>
+                     <p></p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <i><img src="{{ url_for('static', filename='images/thr2.png') }}" alt="#"/></i>
+                     <h3>Tablet</h3>
+                     <p></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- three_box -->
+
+
+   
+
+      <!-- Left Image -->
+
+      <div class="leftright" >
+         <h1 style="text-align: center; font-family: 'Libre Baskerville', serif; font-size: 40px;color: cornflowerblue;font-weight: 700;margin-top: 30px;text-decoration: underline;">How ransomware infects a system or device</h1>
+      
+         <section class="left-image">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-6">
+                  <img src="{{ url_for('static', filename='images/8184220_3825528.svg') }}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                  <div class="right-content">
+                     <h4>Phishing emails and other social engineering attacks:</h4>
+                     <p>Phishing emails manipulate users into downloading and running a malicious attachment (which contains the ransomware disguised as a harmless looking .pdf, Microsoft Word document, or other file), or into visiting a malicious website that passes the ransomware through the user’s web browser. In IBM's Cyber Resilient Organization Study 2021, phishing and other social engineering tactics caused 45 percent of all ransomware attacks reported by survey participants, making them the most common of all ransomware attack vectors.</p>
+                     <div class="primary-button">
+
+                     </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+            </section>
+
+            <!-- Right Image -->
+            <section class="right-image" style=" margin-left: 30px">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-md-6">
+                     <div class="left-content" >
+                        <h4>Operating system and software vulnerabilities</h4>
+                        <p>Cybercriminals often exploit existing vulnerabilities to inject malicious code into a device or network. Zero-day vulnerabilities, which are vulnerabilities either unknown to the security community or identified but not yet patched, pose a particular threat. Some ransomware gangs buy information on zero-day flaws from other hackers to plan their attacks. Hackers have also effectively used patched vulnerabilities as attack vectors, as was the case in the 2017 WannaCry attack discussed below.</p>
+                        <div class="primary-button">
+
+                        </div>
+                     </div>
+                     </div>
+                     <div class="col-md-6">
+                     <img src="{{ url_for('static', filename='images/pngegg101.png') }}" alt="">
+                     </div>
+                  </div>
+               </div>
+               </section>
+   
+            </div>
+         </div>
+
+         <!-- Left Image -->
+
+         <section class="left-image" >
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-6">
+                  <img src="{{ url_for('static', filename='images/pngegg102.png') }}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                  <div class="right-content">
+                     <h4>Credential theft: :</h4>
+                     <p>Cybercriminals may steal authorized users' credentials, buy them on the dark web, or crack them through brute force. They may then use these credentials to log into a network or computer and deploy ransomware directly. Remote desktop protocol (RDP), a proprietary protocol developed by Microsoft to allow users to access a computer remotely, is a popular credential-theft target among ransomware attackers.</p>
+                     <div class="primary-button">
+
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            </section>
+
+      </div>
+      
+      <!-- laptop  section -->
+      <div class="laptop container">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="titlepage">
+                     <p>Protect your device carefully!</p>
+                     <h2></h2>
+                     <a class="read_more" href="#customer">KEEP SAFE</a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="laptop_box">
+                     <figure><img src="{{ url_for('static', filename='images/pc.png') }}" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- end laptop  section -->
+
+       <!--  contact -->
+       <div class="contact" id="prediction" 
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Select a row </h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <form id="request" class="main_form" action="/data" method="post" >
+                     <div class="row" style="display: flex;justify-content: center;">
+
+                     <div class="col-md-6" style="width:50%; " >
+                        <input style="border-radius: 20px;background-color: #ffffff;" class="contactus" placeholder="Type any Number  0 to 20700 " required type="number" name="number" min="1" >                          
+                     </div>
+                     
+                        <div class="col-md-12">
+                           <button class="send_btn">GET DATA</button>
+                        </div>
+                     </div>
+                     <div class="row" style="display: flex;justify-content: center;">
+
+                        <div class="col-md-6" style="width:50%">
+                           <h3  style="text-align: center;margin-top: 10px;">Or Enter Manually </h3>                        
+                        </div>
+                        
+                           <div class="col-md-12" >
+                              <button class="send_btn" ><a href="/input" style="color: white;text-align: center;padding-top: 40px;">Click Here</a></button>                          
+                           </button>
+                           </div>
+                        </div>
+
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
+      <!-- customer -->
+      <div class="customer" id="customer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>prevent your computer viruses</h2>
+                     <h1>Just like with your immune system, an ounce of prevention is worth a pound of cure when it comes to computer viruses:</h1>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide customer_Carousel " data-ride="carousel">
+                     <!-- <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol> -->
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-9 offset-md-3">
+                                       <div class="test_box">
+                                          <i><img src="images/cos.png" alt="#"/></i>
+                                          <h4> 1. Use antivirus software</h4>
+                                          <p> You should always have a trusted antivirus installed on your computer – it is best to boot up some antivirus software as soon as you start using a new device. You should be able to turn on regular scans of your entire device so you know if there are any issues ASAP. 
+                                          </p>>
+                                             
+                                          <h4>2. Follow the Core 4 </h4>
+                                             
+                                          <p>By following four basic cybersecurity behaviors, you can forge good habits that make it tough for computer viruses to get through: 
+                                             
+                                                Use complex passwords that are at least 12 characters long and are unique to each account; use a password manager to securely store all your passwords 
+                                                Turn on multi-factor authentication (MFA, sometimes called 2-factor authentication) for any account that permits it 
+                                                Turn on automatic updates for your hardware, software, and apps 
+                                                Learn how to identify phishing – don’t take the bait! 
+                                          </p>
+
+                                          <h4>3. Be careful on public wi-fi </h4>
+                                          
+                                          <p>Public wi-fi in cafes, airports, and other businesses can be convenient, but these networks are often unsecured and leave your phone, tablet, or computer susceptible to viruses. Using a personal mobile hotspot or VPN (virtual private network) is a more secure way to connect when you are on the go.  
+                                          </p>
+                                          <h4>4. Get your software fresh from the source </h4>
+                                          <p>
+                                          One of the oldest tricks in the cybercriminal’s book is to sneak viruses and malware into software and files people want to pirate. Always download software from verified sources and get all your apps from your device’s official app store. You might think your saving some money by pirating software, movies, or other media, but you are also putting your expensive device and network at risk! </p>
+                                       </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end customer -->
+
+     
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <img class="logo1" src="{{ url_for('static', filename='images/pngegg101.png') }}" alt=""/>
+                     <ul class="social_icon">
+                        <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <h3>About Us</h3>
+                     <ul class="about_us">
+                        <li>dolor sit amet, consectetur<br> magna aliqua. Ut enim ad <br>minim veniam, <br> quisdotempor incididunt r</li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <h3>Contact Us</h3>
+                     <ul class="conta">
+                        <li>dolor sit amet,<br> consectetur <br>magna aliqua.<br> quisdotempor <br>incididunt ut e </li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <div class="bottom_form" >
+                        <h3>Get In Touch</h3>
+                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
+                        <button class="sub_btn">send</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2023 All Rights Reserved. Design by<a href=""> Me</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+	  <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+      <script src="js/popper.min.js"></script>
+	  <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+	  <script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+	  <script src="{{url_for('static',filename='js/jquery-3.0.0.min.js')}}"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	  <script src="{{url_for('static',filename='js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+      <script src="js/custom.js"></script>
+	  <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+
+   </body>
+</html>
+
+
